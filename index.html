@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700&display=swap" rel="stylesheet">
+  <script src="js/cars_app.js"></script>
+  <title>Auto Net</title>
+</head>
+
+<body>
+  <header class="header">
+<button id = "btn-form-open" class="header__btn" type="button" name="button">New Car</button>
+
+<button id="btn-form-delete-all" class="header__btn" type="button" name="button">Delete All</button>
+  </header>
+
+<!-- form------------------------------>
+  <div class="form-popup" id="myForm">
+  <form id="add-car-form" action="index.html" class="form-container">
+    <!-- <h1 class="form-container__text">Add New Car</h1> -->
+    <div class="form-container__form">
+
+      <div class="form-container__inputs">
+
+        <div class="form-container__inputs__wrapper">
+          <label class="form-container__inputs__label" for="make"><b>Make:</b></label>
+          <input id="make" class="form-container__inputs__input-box" type="text" placeholder="Enter Make" name="make" required>
+        </div>
+
+        <div class="form-container__inputs__wrapper">
+          <label class="form-container__inputs__label" for="model"><b>Model:</b></label>
+          <input id="model" class="form-container__inputs__input-box" type="text" placeholder="Enter Model" name="model" required>
+        </div>
+
+        <div class="form-container__inputs__wrapper">
+          <label class="form-container__inputs__label" for="year"><b>Year:</b></label>
+          <input id="year" class="form-container__inputs__input-box" type="text" placeholder="Enter Year" name="year" required>
+        </div>
+
+<!-- add image: -->
+        <div class="form-container__inputs__wrapper">
+            <label class="form-container__inputs__label" for="photoURL"><b>Photo URL:</b></label>
+            <input id="photoURL" class="form-container__inputs__input-box" type="text" placeholder="URL" name="photoURL">
+
+        </div>
+
+      </div>
+
+      <div class="form-container__actions">
+        <button id="btn-form-submit" type="submit" class="form-popup__btn btn">ADD</button>
+
+        <button id="btn-form-close" type="button" class="form-popup__btn btn" >CLOSE FORM</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- form-------------------------------->
+
+<main class="main">
+
+  <div class="main__cars-container">
+
+  <div class="main__cars-container-item">
+
+    <div class="model-info">
+      <h2>Make: BMW</h2>
+      <h2>Model: M3</h2>
+      <h2>Year: 2010</h2>
+    </div>
+
+    <div class="img-wrapper">
+      <img class ="car-image" src="images/image-bmw.jpg" alt="car-image">
+    </div>
+
+  </div>
+
+
+    <!-- <div class="">Item 4</div>
+    <div class="">Item 5</div>
+    <div class="">Item 6</div>
+    <div class="">Item 7</div>
+    <div class="">Item 8</div>
+    <div class="">Item 9</div>
+    <div class="">Item 10</div> -->
+
+</main>
+
+</body>
+</html>
